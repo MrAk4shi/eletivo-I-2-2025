@@ -11,6 +11,10 @@
 <?php
     $nome = $_POST["nome"];
     echo "<p>Seja bem vindo(a), $nome </p>";
+
+    $n1 = $_POST["n1"];
+    $n2 = $_POST["n2"];
+    echo "n1 + n2 =" . $n1 +  $n2 ."";
 ?>  
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
