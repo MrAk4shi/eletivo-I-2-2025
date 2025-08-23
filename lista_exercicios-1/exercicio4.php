@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container">
-<h1>MULTIPLICAÇÃO</h1>
+<h1>DIVISÃO</h1>
 <form method="post">
 <div class="mb-3">
               <label for="numero" class="form-label">n1</label>
@@ -25,12 +25,14 @@
 
         $n1 = $_POST["n1"];
         $n2 = $_POST["n2"];
-        $mult = $n1 - $n2;
-        echo "<p>Multiplicação: $mult </p>";
-
+        if($n1 > 0){
+            $divisao = $n2 / $n1;
+            echo "<p>Divisão: $divisao </p>";
+        }
+        else{
+            echo "<p>erro</p>";
+        }
     }
-
-
 
 ?>
 

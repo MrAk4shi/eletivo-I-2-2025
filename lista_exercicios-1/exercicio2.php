@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container">
-<h1></h1>
+<h1>SUBTRAÇÃO</h1>
 <form method="post">
 <div class="mb-3">
               <label for="numero" class="form-label">n1</label>
@@ -26,7 +26,7 @@
         $n1 = $_POST["n1"];
         $n2 = $_POST["n2"];
         $subtracao = $n1 - $n2;
-        echo "<p>Soma: $subtração </p>";
+        echo "<p>Subtração: $subtração </p>";
 
     }
 
