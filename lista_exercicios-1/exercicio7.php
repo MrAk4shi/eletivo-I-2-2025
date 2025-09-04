@@ -19,11 +19,11 @@
 
 
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == "POST")
+    if ($_SERVER['REQUEST_METHOD'] == "POST"){
     $far = $_POST["temperatura"];
     $celsius = ($far-32) / 1.8;
     echo "Temperatura em Celsius: $celsius";
-    
+    }
 ?>
 
 
