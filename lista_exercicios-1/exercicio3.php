@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container">
-<h1>MULTIPLICAÇÃO</h1>
+<h1>Ex 3 - Lista 1</h1>
 <form method="post">
 <div class="mb-3">
               <label for="numero" class="form-label">n1</label>
