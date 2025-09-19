@@ -27,10 +27,10 @@
         if ($valorA < $valorB){
             echo"<p>$valorA $valorB</p>";
         }
-        if ($valorB < $valoA){
+        if ($valorB < $valorA){
             echo"<p>$valorB $valorA</p>";
         }
-        else{
+        if ($valorA == $valorB){
             echo"<p>Valores iguais: $valorA</p>";
         }
     }

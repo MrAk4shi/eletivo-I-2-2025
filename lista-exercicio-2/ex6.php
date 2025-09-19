@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container py-3">
-<h1>Ex 4 - Lista 2</h1>
+<h1>Ex 6 - Lista 2</h1>
 <form method="post">
 <div class="mb-3">
               <label for="valor" class="form-label">Informe o valor</label>
@@ -20,8 +20,8 @@
 <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $valor = $_POST['valor'];
-    for ($i = 1; $i = $valor; $i++)
-        echo "$i";
+    for ($i = 1; $i <= $valor; $i++)
+        echo "$i -";
     }
 ?>
 

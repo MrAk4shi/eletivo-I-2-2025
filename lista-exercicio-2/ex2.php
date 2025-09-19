@@ -30,7 +30,7 @@
             echo"<p>A soma de $n1 e $n2 é igual a $soma</p>";
         }
         else{
-            echo"<p>O triplo da soma entre $n1 e $n2 é".$triplo."</p>";
+            echo"<p>O triplo da soma entre $n1 e $n2 é ".$triplo."</p>";
         }
     }
 ?>
