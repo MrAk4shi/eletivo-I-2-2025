@@ -17,7 +17,7 @@
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'post'){
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
       $numero = $_POST['numero'];
       switch($numero){
         case 1:

@@ -21,7 +21,7 @@
 </form>
 
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'post'){
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $valorA = $_POST['a'];
         $valorB = $_POST['b'];
         if ($valorA < $valorB){

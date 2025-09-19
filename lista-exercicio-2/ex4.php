@@ -18,7 +18,7 @@
 </form>
 
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'post'){
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $valor = $_POST['valor'];
     if ($valor > 100){
         $novoValor = $valor - ($valor * 0.15);

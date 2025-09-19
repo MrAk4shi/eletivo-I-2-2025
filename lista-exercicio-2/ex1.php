@@ -36,7 +36,7 @@
 </form>
 
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'post'){
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $valor1 = $_POST['valor1'];
         $valor2 = $_POST['valor2'];
         $valor3 = $_POST['valor3'];
