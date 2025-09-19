@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container py-3">
-<h1>ex19 - lista 1</h1>
+<h1>Ex 19 - lista 1</h1>
 <form method="post">
 <div class="mb-3">
               <label for="dias" class="form-label">Insira o valor em dias</label>

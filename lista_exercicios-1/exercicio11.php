@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container py-3">
-<h1>ex11 - Lista 1</h1>
+<h1>Ex 11 - Lista 1</h1>
 <form method="post">
 <div class="mb-3">
               <label for="raio" class="form-label">Insira o raio do círculo</label>

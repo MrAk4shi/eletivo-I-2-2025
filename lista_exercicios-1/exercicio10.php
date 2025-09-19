@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container py-3">
-<h1>ex10 - lista 1</h1>
+<h1>Ex 10 - Lista 1</h1>
 <form method="post">
 <div class="mb-3">
 

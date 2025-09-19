@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container py-3">
-<h1>ex20 - lista 1</h1>
+<h1>Ex 20 - lista 1</h1>
 <form method="post">
 <div class="mb-3">
               <label for="distancia" class="form-label">Insira a distância em metros</label>

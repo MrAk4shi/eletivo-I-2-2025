@@ -8,7 +8,7 @@
 </head>
 <body> 
 <div class="container py-3">
-<h1>Ex7- Lista 1</h1>
+<h1>Ex 7 - Lista 1</h1>
 <form method="post">
 <div class="mb-3">
               <label for="temperatura" class="form-label">Digite a temperatura em graus Fahrenheit</label>
