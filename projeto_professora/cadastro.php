@@ -9,18 +9,18 @@
 <body>
   <div class="container mt-5">
     <h2 class="mb-4">Cadastro</h2>
-    <form>
+    <form method="POST">
       <div class="mb-3">
         <label for="nomeCadastro" class="form-label">Nome Completo</label>
-        <input type="text" class="form-control" id="nomeCadastro" placeholder="Digite seu nome completo" required />
+        <input type="text" class="form-control" id="nomeCadastro" name="nome" placeholder="Digite seu nome completo" required />
       </div>
       <div class="mb-3">
         <label for="emailCadastro" class="form-label">Email</label>
-        <input type="email" class="form-control" id="emailCadastro" placeholder="Digite seu email" required />
+        <input type="email" class="form-control" id="emailCadastro" name="email" placeholder="Digite seu email" required />
       </div>
       <div class="mb-3">
         <label for="senhaCadastro" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="senhaCadastro" placeholder="Crie uma senha" required />
+        <input type="password" class="form-control" id="senhaCadastro" name="senha" placeholder="Crie uma senha" required />
       </div>
       <div class="mb-3">
         <label for="confirmaSenhaCadastro" class="form-label">Confirme a Senha</label>
@@ -33,5 +33,31 @@
       <a href="index.php">Faça login aqui</a>
     </p>
   </div>
+
+    <?php
+        if ($_SERVER['REQUEST_METHOD']  == "POST"){
+            require("conexao.php");
+            $nome = $_POST['nome'];
+            $email = $_POST['email'];
+            $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT); //criptografia
+            try{
+                $stmt = $pdo->prepare("INSERT INTO usuario (nome, email, senha) VALUES (?, ?, ?)");
+                if($stmt->execute([$nome, $email, $senha])){
+                    header("location: index.php?cadastro=true");
+                }
+                else{
+                    header("location: index.php?cadastro=false");
+                }
+            } catch(Exception $e){
+                echo "Erro ao executar o comando sql!".$e->getMessage();
+            }
+        }
+
+
+
+
+    ?>
+
 </body>
 </html>
+
