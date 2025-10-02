@@ -3,22 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ex8 - lista 1</title>
+<title>ex10 - lista 1</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
 </head>
 <body> 
 <div class="container py-3">
 <h1>Ex 10 - Lista 1</h1>
 <form method="post">
-<div class="mb-3">
-
-
-              <label for="largura" class="form-label">Insira a largura</label>
-              <input type="number" id="largura" name="largura" class="form-control" required="">
-            </div><div class="mb-3">
+    <div class="mb-3">
+        <label for="largura" class="form-label">Insira a largura</label>
+        <input type="number" id="largura" name="largura" class="form-control" required="">
+    </div>
+    <div class="mb-3">
               <label for="altura" class="form-label">Insira a altura</label>
               <input type="number" id="altura" name="altura" class="form-control" required="">
-            </div>
+    </div>
 <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
