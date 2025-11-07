@@ -1,0 +1,77 @@
+/* === Estilo global === */
+body {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* === Cartão de cadastro === */
+  .card {
+    width: 100%;
+    max-width: 420px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    padding: 32px;
+  }
+  
+  .card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #212529;
+  }
+  
+  /* === Campos do formulário === */
+  .form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 0.15rem rgba(108, 99, 255, 0.25);
+  }
+  
+  /* === Botão === */
+  .btn-custom {
+    background: linear-gradient(135deg, #6c63ff, #857dff);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-custom:hover {
+    background: linear-gradient(135deg, #5b55e0, #756eff);
+  }
+  
+  /* === Links e alertas === */
+  .text-muted a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .text-muted a:hover {
+    text-decoration: underline;
+  }
+  
+  .alert {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    text-align: center;
+  }
+  

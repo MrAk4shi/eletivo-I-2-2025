@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `projetophp`.`usuario` (
   `nomeUsuario` VARCHAR(100) NOT NULL,
   `emailUsuario` VARCHAR(100) NOT NULL UNIQUE,
   `senhaHash` VARCHAR(255) NOT NULL,
-  `dataCriacao` DATETIME DEFAULT CURRENT_TIMESTAMP);
+  `dataCriacao` DATETIME DEFAULT CURRENT_TIMESTAMP)
 ENGINE = InnoDB;
 
 
