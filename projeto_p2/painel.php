@@ -37,11 +37,14 @@ $nomeUsuario = $usuario ? $usuario["nomeUsuario"] : "Usuário";
   <h2>Bem-vindo, <strong><?php echo $nomeUsuario; ?></strong></h2>
   <p>Escolha uma opção abaixo:</p>
 
-  <a href="clientes.php" class="painel-btn">Gerenciar Clientes</a>
-  <a href="servicos.php" class="painel-btn">Gerenciar Serviços</a>
-  <a href="profissionais.php" class="painel-btn">Gerenciar Profissionais</a>
-  <a href="agendamentos.php" class="painel-btn">Agendamentos</a>
-  <a href="financeiro.php" class="painel-btn">Financeiro</a>
+  <!--CRUDs-->
+<a href="clientes/painelCliente.php" class="painel-btn">Gerenciar Clientes</a>
+<a href="servicos/painelServico.php" class="painel-btn">Gerenciar Serviços</a>
+<a href="profissionais/painelProfissional.php" class="painel-btn">Gerenciar Profissionais</a>
+<!--NÃO CRUD-->
+<a href="agendamentos/agendamentos.php" class="painel-btn">Agendamentos</a>
+<a href="financeiro/financeiro.php" class="painel-btn">Financeiro</a>
+
 
   <a href="logout.php" class="logout">Sair</a>
 

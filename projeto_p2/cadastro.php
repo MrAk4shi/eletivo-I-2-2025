@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -15,6 +19,7 @@
 <body>
   <div class="card">
     <h2>Cadastro de Usuário</h2>
+
     <form action="" method="POST">
       <div class="mb-3">
         <label for="nomeCadastro" class="form-label">Nome</label>
@@ -40,6 +45,7 @@
 
     <?php
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
+
       require("conexao.php");
 
       $nome = $_POST['nome'];
@@ -48,9 +54,22 @@
       $dataCriacao = date('Y-m-d H:i:s');
 
       try {
-        $stmt = $pdo->prepare("INSERT INTO usuario (nomeUsuario, emailUsuario, senhaHash, dataCriacao) VALUES (?, ?, ?, ?)");
+        $stmt = $pdo->prepare("
+            INSERT INTO usuario (nomeUsuario, emailUsuario, senhaHash, dataCriacao) 
+            VALUES (?, ?, ?, ?)
+        ");
+
         if ($stmt->execute([$nome, $email, $senha, $dataCriacao])) {
-          echo '<div class="alert alert-success">Cadastro realizado com sucesso!</div>';
+
+          // Pega o ID do usuário recém-criado
+          $idUsuario = $pdo->lastInsertId();
+
+          // Salva na sessão
+          $_SESSION["usuario"] = $idUsuario;
+
+          // Redireciona para o painel
+          header("Location: painel.php");
+          exit;
         } else {
           echo '<div class="alert alert-danger">Erro ao cadastrar. Tente novamente.</div>';
         }
