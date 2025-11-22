@@ -1,0 +1,107 @@
+/* ======== CONTAINER ======== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.conteiner {
+    width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* ======== TÍTULOS ======== */
+h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* ======== FORMULÁRIO ======== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #444;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6b63ff;
+}
+
+/* ======== BOTÕES ======== */
+.btn {
+    background: #6b63ff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #5a52e6;
+}
+
+/* ======== LINKS ======== */
+.voltar {
+    display: block;
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+/* ======== LISTA (para LISTAR clientes) ======== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #6b63ff;
+    color: white;
+}
+
+.acao a {
+    margin: 0 5px;
+    padding: 6px 12px;
+    color: white;
+    background: #6b63ff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.acao a:hover {
+    background: #5a52e6;
+}
