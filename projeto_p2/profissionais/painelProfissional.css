@@ -1,0 +1,47 @@
+/* PAINEL PROFISSIONAL — mesmo estilo dos clientes/serviços */
+
+body {
+    background: #f3f3f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.painel-container {
+    width: 480px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .15);
+    text-align: center;
+}
+
+.painel-container h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.painel-btn {
+    display: block;
+    background: #675CFF;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.painel-btn:hover {
+    background: #594fe0;
+}
+
+.logout, .voltar {
+    display: block;
+    margin-top: 20px;
+    color: #D00000;
+    font-weight: bold;
+    text-decoration: none;
+}
