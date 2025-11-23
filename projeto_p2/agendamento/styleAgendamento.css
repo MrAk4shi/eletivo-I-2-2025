@@ -1,0 +1,90 @@
+/* ======== CONTAINER ======== */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+/* ======== BOTÕES ======== */
+.btn {
+    background: #6b63ff;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.btn:hover {
+    background: #5a52e6;
+}
+.voltar {
+    background: #444;
+}
+.voltar:hover {
+    background: #333;
+}
+
+/* ======== FORMULÁRIO ======== */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ======== TABELA ======== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Cabeçalho roxo */
+th {
+    background: #6b63ff;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Linhas alternadas lilás */
+tr:nth-child(even) td {
+    background: #ece9ff;
+}
+
+tr:nth-child(odd) td {
+    background: #f7f5ff;
+}
+
+/* Células */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #dcd7ff;
+    color: #333;
+}
+
+/* Botões da tabela */
+.btn-table {
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.btn-table.edit {
+    background: #6b63ff;
+}
+.btn-table.edit:hover {
+    background: #5a52e6;
+}
+.btn-table.delete {
+    background: #ff4b4b;
+}
+.btn-table.delete:hover {
+    background: #e04444;
+}

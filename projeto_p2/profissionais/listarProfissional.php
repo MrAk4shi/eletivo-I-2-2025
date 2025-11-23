@@ -17,13 +17,14 @@ $profissionais = $sql->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <title>Lista de Profissionais</title>
     <link rel="stylesheet" href="styleProfissional.css">
+    
 </head>
 <body>
 
 <div class="conteiner">
     <h2>Lista de Profissionais</h2>
 
-    <table>
+    <table class="tabela-profissionais">
         <tr>
             <th>ID</th>
             <th>Nome</th>

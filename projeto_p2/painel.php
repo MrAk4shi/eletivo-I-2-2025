@@ -42,7 +42,7 @@ $nomeUsuario = $usuario ? $usuario["nomeUsuario"] : "Usuário";
 <a href="servicos/painelServico.php" class="painel-btn">Gerenciar Serviços</a>
 <a href="profissionais/painelProfissional.php" class="painel-btn">Gerenciar Profissionais</a>
 <!--NÃO CRUD-->
-<a href="agendamentos/agendamentos.php" class="painel-btn">Agendamentos</a>
+<a href="agendamento/painelAgendamento.php" class="painel-btn">Agendamentos</a>
 <a href="financeiro/financeiro.php" class="painel-btn">Financeiro</a>
 
 
