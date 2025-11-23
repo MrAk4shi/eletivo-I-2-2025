@@ -1,3 +1,115 @@
+/* ======== ESTILO GERAL ======== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0ff; /* fundo lilás claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== CONTAINER PADRÃO ======== */
+.conteiner {
+    width: 500px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* ======== CONTAINER MAIOR PARA LISTAGENS ======== */
+.conteiner-lista {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+/* ======== TÍTULO ======== */
+h2 {
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+/* ======== FORMULÁRIOS ======== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #444;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #6b63ff;
+}
+
+/* ======== BOTÕES ======== */
+.btn, .btn-table {
+    display: inline-block;
+    background: #6b63ff;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.btn:hover, .btn-table:hover {
+    background: #5648d8;
+}
+
+/* ======== BOTÕES ESPECÍFICOS ======== */
+.btn-table.delete {
+    background: #ff4b4b;
+}
+
+.btn-table.delete:hover {
+    background: #d93636;
+}
+
+/* ======== VOLTAR ======== */
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #777;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.voltar:hover {
+    background-color: #555;
+}
+
 /* ======== TABELA ======== */
 table {
     width: 100%;
@@ -5,53 +117,61 @@ table {
     margin-top: 20px;
 }
 
-/* Cabeçalho roxo igual ao modelo */
 th {
     background: #6b63ff;
     color: #fff;
     padding: 12px;
-    text-align: left;
     font-weight: bold;
+    text-align: left;
 }
 
-/* Linhas com fundo roxo bem claro */
-tr:nth-child(even) td {
-    background: #ece9ff; /* roxo clarinho */
-}
-
-tr:nth-child(odd) td {
-    background: #f7f5ff; /* quase branco com tom lilás */
-}
-
-/* Células */
 td {
-    padding: 12px;
-    border-bottom: 1px solid #dcd7ff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
     color: #333;
 }
 
-/* Botões dentro da tabela */
-.btn-table {
-    padding: 6px 14px;
-    border-radius: 8px;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.2s;
+/* Fundo das linhas alternadas */
+tr:nth-child(even) td {
+    background-color: #f7f4ff; /* lilás muito claro */
 }
 
+tr:nth-child(odd) td {
+    background-color: #ece9ff;
+}
+
+tr:hover td {
+    background-color: #e1dcff;
+}
+
+/* ======== AÇÕES NA TABELA ======== */
+.acao a, .btn-table {
+    margin: 0 5px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white !important; /* garante contraste */
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* EDITAR */
 .btn-table.edit {
-    background: #6b63ff;
+    background-color: #6b63ff; /* roxo forte */
 }
 
 .btn-table.edit:hover {
-    background: #5a52e6;
+    background-color: #5648d8;
 }
 
+/* EXCLUIR */
 .btn-table.delete {
-    background: #ff4b4b;
+    background-color: #ff4b4b;
 }
 
 .btn-table.delete:hover {
-    background: #e04444;
+    background-color: #cc3a3a;
 }
+
+

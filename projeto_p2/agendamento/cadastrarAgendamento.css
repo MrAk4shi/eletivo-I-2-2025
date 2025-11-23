@@ -1,0 +1,91 @@
+/* ======== FUNDO E CONTAINER ======== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f2ff;
+}
+
+.container {
+    width: 700px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* ======== TÍTULO ======== */
+h2 {
+    margin-bottom: 25px;
+    color: #47268b;
+    font-size: 28px;
+}
+
+/* ======== FORMULÁRIO ======== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: -5px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #6b63ff;
+    box-shadow: 0 0 5px rgba(107, 99, 255, 0.5);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* ======== BOTÃO SALVAR ======== */
+.btn {
+    background: #6b63ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #5547d9;
+}
+
+/* ======== LINK VOLTAR ======== */
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    background: #777;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.voltar:hover {
+    background: #555;
+}

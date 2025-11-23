@@ -35,7 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta charset="UTF-8">
     <title>Cadastrar Profissional</title>
 
-    <link rel="stylesheet" href="styleProfissional.css">
+    <link rel="stylesheet" href="styleProfissional.css?v=<?= time() ?>">
+
 </head>
 <body>
 

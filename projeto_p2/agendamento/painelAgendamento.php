@@ -11,7 +11,7 @@ if (!isset($_SESSION["usuario"])) {
 <head>
     <meta charset="UTF-8">
     <title>Painel de Agendamentos</title>
-    <link rel="stylesheet" href="styleAgendamento.css">
+    <link rel="stylesheet" href="painelAgendamento.css">
 </head>
 <body>
 

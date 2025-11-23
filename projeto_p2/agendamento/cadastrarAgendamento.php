@@ -7,7 +7,7 @@ if (!isset($_SESSION["usuario"])) {
     exit;
 }
 
-$clientes = $pdo->query("SELECT idCliente, nomeCliente FROM cliente")->fetchAll(PDO::FETCH_ASSOC);
+$clientes = $pdo->query("SELECT idCliente, nome FROM cliente")->fetchAll(PDO::FETCH_ASSOC);
 $profissionais = $pdo->query("SELECT idProfissionais, nomeProfissional FROM profissionais")->fetchAll(PDO::FETCH_ASSOC);
 $servicos = $pdo->query("SELECT idServico, nomeServico FROM servicos")->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -17,7 +17,7 @@ $servicos = $pdo->query("SELECT idServico, nomeServico FROM servicos")->fetchAll
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar Agendamento</title>
-    <link rel="stylesheet" href="styleAgendamento.css">
+    <link rel="stylesheet" href="cadastrarAgendamento.css?v=<?= time() ?>">
 </head>
 <body>
 
@@ -50,7 +50,7 @@ $servicos = $pdo->query("SELECT idServico, nomeServico FROM servicos")->fetchAll
         <select name="cliente" required>
             <option value="">Selecione</option>
             <?php foreach ($clientes as $c): ?>
-                <option value="<?= $c['idCliente'] ?>"><?= $c['nomeCliente'] ?></option>
+                <option value="<?= $c['idCliente'] ?>"><?= $c['nome'] ?></option>
             <?php endforeach; ?>
         </select>
 

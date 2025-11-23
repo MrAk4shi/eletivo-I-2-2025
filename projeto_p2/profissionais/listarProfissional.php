@@ -16,7 +16,7 @@ $profissionais = $sql->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>Lista de Profissionais</title>
-    <link rel="stylesheet" href="styleProfissional.css">
+    <link rel="stylesheet" href="styleProfissional.css?v=<?= time() ?>">
     
 </head>
 <body>

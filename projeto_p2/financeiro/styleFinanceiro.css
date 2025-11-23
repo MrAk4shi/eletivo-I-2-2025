@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f2ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.16);
+    text-align: center;
+}
+
+h2 {
+    color: #47268b;
+    margin-bottom: 25px;
+}
+
+.box-total {
+    background: #6b63ff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.box-total .valor {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background: #6b63ff;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+tr:nth-child(even) td {
+    background-color: #ece9ff;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background: #777;
+    color: white;
+    font-weight: bold;
+}
+
+.voltar:hover {
+    background: #555;
+}
