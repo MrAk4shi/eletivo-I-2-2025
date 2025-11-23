@@ -21,8 +21,8 @@ if (!$ag) {
     exit;
 }
 
-// BUSCA LISTAS
-$clientes = $pdo->query("SELECT idCliente, nomeCliente FROM cliente")->fetchAll(PDO::FETCH_ASSOC);
+// BUSCA LISTAS CORRIGIDAS
+$clientes = $pdo->query("SELECT idCliente, nome FROM cliente")->fetchAll(PDO::FETCH_ASSOC);
 $profissionais = $pdo->query("SELECT idProfissionais, nomeProfissional FROM profissionais")->fetchAll(PDO::FETCH_ASSOC);
 $servicos = $pdo->query("SELECT idServico, nomeServico FROM servicos")->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -32,7 +32,7 @@ $servicos = $pdo->query("SELECT idServico, nomeServico FROM servicos")->fetchAll
 <head>
     <meta charset="UTF-8">
     <title>Editar Agendamento</title>
-    <link rel="stylesheet" href="styleAgendamento.css">
+    <link rel="stylesheet" href="editarAgendamento.css">
 </head>
 <body>
 
@@ -48,10 +48,10 @@ $servicos = $pdo->query("SELECT idServico, nomeServico FROM servicos")->fetchAll
         <input type="date" name="dataAgendamento" value="<?= $ag['dataAgendamento'] ?>" required>
 
         <label>Início do Serviço:</label>
-        <input type="datetime-local" name="inicioServico" value="<?= str_replace(" ", "T", $ag['inicioServico']) ?>" required>
+        <input type="datetime-local" name="inicioServico" value="<?= str_replace(' ', 'T', $ag['inicioServico']) ?>" required>
 
         <label>Fim do Serviço:</label>
-        <input type="datetime-local" name="fimServico" value="<?= str_replace(" ", "T", $ag['fimServico']) ?>" required>
+        <input type="datetime-local" name="fimServico" value="<?= str_replace(' ', 'T', $ag['fimServico']) ?>" required>
 
         <label>Status:</label>
         <select name="status">
@@ -67,7 +67,7 @@ $servicos = $pdo->query("SELECT idServico, nomeServico FROM servicos")->fetchAll
         <select name="cliente" required>
             <?php foreach ($clientes as $c): ?>
                 <option value="<?= $c['idCliente'] ?>" <?= $ag['cliente_idCliente']==$c['idCliente']?"selected":"" ?>>
-                    <?= $c['nomeCliente'] ?>
+                    <?= $c['nome'] ?>
                 </option>
             <?php endforeach; ?>
         </select>
