@@ -28,17 +28,7 @@ CREATE TABLE IF NOT EXISTS `projetophp`.`cliente` (
   UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC))
 ENGINE = InnoDB;
 
-
--- -----------------------------------------------------
--- Table `projetophp`.`servicos`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `projetophp`.`servicos` (
-  `idServico` INT NOT NULL AUTO_INCREMENT,
-  `nomeServico` VARCHAR(100) NOT NULL,
-  `descricaoServico` TEXT NULL,
-  `precoServico` DECIMAL(10,2) NOT NULL,
-  PRIMARY KEY (`idServico`))
-ENGINE = InnoDB;
+c
 
 
 -- -----------------------------------------------------

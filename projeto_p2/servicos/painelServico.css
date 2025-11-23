@@ -1,0 +1,38 @@
+.painel-container {
+    width: 500px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.painel-btn {
+    display: block;
+    padding: 12px;
+    background: #6c63ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.painel-btn:hover {
+    background: #5750d4;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 25px;
+    color: red;
+    font-weight: bold;
+}
