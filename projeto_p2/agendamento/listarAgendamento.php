@@ -52,6 +52,7 @@ $lista = $sql->fetchAll(PDO::FETCH_ASSOC);
             <th>Ações</th>
         </tr>
 
+        <!-- Loop pelos agendamentos e exibe na tabela -->
         <?php foreach ($lista as $a): ?>
         <tr>
             <td><?= $a["idAgendamento"] ?></td>

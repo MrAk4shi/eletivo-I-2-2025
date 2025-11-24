@@ -2,11 +2,13 @@
 session_start();
 require("../conexao.php"); 
 
+// Impedir acesso sem login
 if (!isset($_SESSION["usuario"])) {
     header("Location: ../login.php");
     exit;
 }
 
+// Inicializar mensagem de erro
 $mensagem = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -16,7 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $endereco = $_POST["endereco"];
     $email = $_POST["email"];
 
+
+
     try {
+        //PREPARA CONSULTA PARA INSERÇÃO E EXECUTA
         $sql = $pdo->prepare("INSERT INTO cliente (nome, cpf, telefone, endereco, email) VALUES (?, ?, ?, ?, ?)");
         $sql->execute([$nome, $cpf, $telefone, $endereco, $email]);
         header("Location: listarCliente.php?sucesso=1");

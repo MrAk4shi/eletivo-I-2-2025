@@ -6,7 +6,7 @@ if (!isset($_SESSION["usuario"])) {
     header("Location: ../login.php");
     exit;
 }
-
+//busca clientes, profissionais e serviços para popular os selects
 $clientes = $pdo->query("SELECT idCliente, nome FROM cliente")->fetchAll(PDO::FETCH_ASSOC);
 $profissionais = $pdo->query("SELECT idProfissionais, nomeProfissional FROM profissionais")->fetchAll(PDO::FETCH_ASSOC);
 $servicos = $pdo->query("SELECT idServico, nomeServico FROM servicos")->fetchAll(PDO::FETCH_ASSOC);

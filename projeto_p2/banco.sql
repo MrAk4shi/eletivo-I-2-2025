@@ -28,8 +28,6 @@ CREATE TABLE IF NOT EXISTS `projetophp`.`cliente` (
   UNIQUE INDEX `cpf_UNIQUE` (`cpf` ASC))
 ENGINE = InnoDB;
 
-c
-
 
 -- -----------------------------------------------------
 -- Table `projetophp`.`profissionais`

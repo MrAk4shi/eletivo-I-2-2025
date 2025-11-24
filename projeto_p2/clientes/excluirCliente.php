@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!$cliente) {
         $erro = "Cliente não encontrado!";
     } else {
+        //Exclui o cliente pelo ID
         $stmt = $pdo->prepare("DELETE FROM cliente WHERE idCliente = ?");
         if ($stmt->execute([$id])) {
             header("Location: listarCliente.php?msg=excluido");

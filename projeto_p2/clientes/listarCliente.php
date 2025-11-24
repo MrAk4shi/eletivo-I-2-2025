@@ -7,6 +7,7 @@ if (!isset($_SESSION["usuario"])) {
     exit;
 }
 
+//busca todos os clientes no banco de dados
 $stmt = $pdo->query("SELECT * FROM cliente ORDER BY nome ASC");
 $clientes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -43,6 +44,7 @@ $sucesso = isset($_GET["sucesso"]);
             <th>Ações</th>
         </tr>
 
+        <!-- Loop pelos clientes e exibe na tabela -->
         <?php foreach ($clientes as $cliente): ?>
             <tr>
                 <td><?= $cliente["idCliente"] ?></td>

@@ -10,9 +10,11 @@ $cliente = $_POST["cliente"];
 $prof = $_POST["profissional"];
 $servico = $_POST["servico"];
 
+// prepara a query de inserção
 $sql = $pdo->prepare("INSERT INTO agendamento 
 (dataAgendamento, inicioServico, fimServico, status, observacoes, cliente_idCliente, profissionais_idProfissionais, servicos_idServico)
 VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+// executa a query com os valores recebidos
 $sql->execute([$data, $inicio, $fim, $status, $obs, $cliente, $prof, $servico]);
 
 header("Location: listarAgendamento.php");

@@ -35,6 +35,7 @@ $nomeUsuario = $usuario ? $usuario["nomeUsuario"] : "Usuário";
 <div class="painel-container">
 
   <h2>Bem-vindo, <strong><?php echo $nomeUsuario; ?></strong></h2>
+  <p>Sistema de Agendamento de Serviços</p>
   <p>Escolha uma opção abaixo:</p>
 
   <!--CRUDs-->
